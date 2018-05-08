@@ -15,10 +15,10 @@ import java.lang.*;
 class TREEORD{
     static class Node{
         int valor;
-		Node esquerdo;
-		Node direito;
+	Node esquerdo;
+	Node direito;
 	
-        public Node(int valor) {
+        public Node(int valor){
             this.valor = valor;
             esquerdo = null;
             direito = null;
@@ -59,9 +59,9 @@ class TREEORD{
             if (nó == null)
                 return;
             
-			posOrdemTree(nó.esquerdo);
-			posOrdemTree(nó.direito);
-			posStr += nó.valor + " ";
+		posOrdemTree(nó.esquerdo);
+		posOrdemTree(nó.direito);
+		posStr += nó.valor + " ";
         }
         
         private String equalsStr(){
